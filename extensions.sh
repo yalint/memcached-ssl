@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sudo pecl channel-update pecl.php.net
 sudo yum install php8.1-devel php-pear gcc -y
 sudo dnf install -y libzip libzip-devel ImageMagick ImageMagick-devel cyrus-sasl-devel
