@@ -18,6 +18,7 @@ yes '' | sudo pecl install apcu
 sudo wget https://github.com/yalint/memcached-ssl/raw/master/libcrypto.so.1.1
 sudo wget https://github.com/yalint/memcached-ssl/raw/master/libssl.so.1.1
 sudo cp libcrypto.so.1.1 /usr/lib64
+sudo cp libcrypto.so.1.1 /usr/lib64/libcrypt.so.1
 sudo cp libssl.so.1.1 /usr/lib64
 sudo wget https://elasticache-downloads.s3.amazonaws.com/ClusterClient/PHP-8.1/latest-64bit-X86-openssl1.1
 sudo tar -xvzf latest-64bit-X86-openssl1.1
