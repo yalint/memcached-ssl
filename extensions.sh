@@ -25,3 +25,7 @@ sudo tar -xvzf latest-64bit-X86-openssl1.1
 sudo cp amazon-elasticache-cluster-client.so /usr/lib64/php/modules/memcached.so
 echo extension=memcached.so | sudo tee /etc/php.d/20-memcached.ini
 sudo rm -rf latest-64bit-X86-openssl1.1 amazon-elasticache-cluster-client.so README.markdown
+sudo dnf install -y xorg-x11-server-Xvfb libXrender libXext fontconfig
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox-0.12.6.1-3.fedora37.x86_64.rpm
+sudo dnf install -y ./wkhtmltox-0.12.6.1-3.fedora37.x86_64.rpm
+wkhtmltopdf --version
