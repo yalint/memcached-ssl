@@ -15,6 +15,8 @@ sudo pecl install zip
 sudo pecl install igbinary
 yes '' | sudo pecl install imagick
 yes '' | sudo pecl install apcu
+yes '' | sudo pecl install redis
+echo extension=redis.so | sudo tee /etc/php.d/20-redis.ini
 sudo wget https://github.com/yalint/memcached-ssl/raw/master/libcrypto.so.1.1
 sudo wget https://github.com/yalint/memcached-ssl/raw/master/libssl.so.1.1
 sudo cp libcrypto.so.1.1 /usr/lib64
