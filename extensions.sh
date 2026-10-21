@@ -24,7 +24,7 @@ sudo cp libcrypto.so.1.1 /usr/lib64/libcrypt.so.1
 sudo cp libssl.so.1.1 /usr/lib64
 sudo wget https://elasticache-downloads.s3.amazonaws.com/ClusterClient/PHP-8.3/latest-64bit-X86-openssl1.1
 sudo tar -xvzf latest-64bit-X86-openssl1.1
-sudo cp amazon-elasticache-cluster-client.so /usr/lib64/php/modules/memcached.so
+sudo cp amazon-elasticache-cluster-client.so /usr/lib64/php8.3/modules/memcached.so
 echo extension=memcached.so | sudo tee /etc/php.d/20-memcached.ini
 sudo rm -rf latest-64bit-X86-openssl1.1 amazon-elasticache-cluster-client.so README.markdown
 sudo dnf install -y xorg-x11-server-Xvfb libXrender libXext fontconfig
